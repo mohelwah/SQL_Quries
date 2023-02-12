@@ -1,0 +1,18 @@
+conversion_IP range	country_code
+1st octect between 0-50--AT
+51-100----------	US
+101-150---------	DE
+151-200---------	GR
+201-255---------	ES
+
+SQL Query
+1.create a table with all ‘subid’ where the ‘country_code’ is mismatching with the ‘conversion_IP’
+2.create a table where the same ‘conversion_IP’ can be found 2 or more times in different ‘subids’;
+and a column with the corresponding ‘adv_payout_usd’
+3. Considering all the events that happened in the ‘country_code’: US, what is the % of mismatch found? (mismatch
+is defined as a mismatch between ‘country_code’ and country derived from ‘conversion_IP’)
+4. A query to calculate  % of ‘adv_payout_usd’ for each ‘application_id’ where mismatch has been found
+
+Python code
+automate the process of sending by email the results from the above to the following email address:abc.xyz@gmail.com
+and also which tool you know or would use to run this application periodically
